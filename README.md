@@ -44,6 +44,7 @@ This is a tool of building restful document for one PHP frame
  * @version 1.0 版本标识
  * @author onps 作者标识
  */
+ 
 注：类注释必须包含@final class 方法注释必须包含@final function
 
 方法注释实例：
