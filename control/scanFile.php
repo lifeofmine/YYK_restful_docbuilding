@@ -1,5 +1,12 @@
 <?php
+/*
+ * 扫描文件
+ */
 class scanFile{
+    /*
+     * 扫描指定目录下的文件
+     * string 指定目录
+     */
     public function scanFiles($directory){
         $arr = scandir($directory);
         $scandirArr = array();
@@ -8,8 +15,6 @@ class scanFile{
                 $scandirArr[$value]['url'] = $value.".html";
             }
         }
-        // var_dump($scandirArr);
-        // echo "<br>";
         $dn = @opendir($directory);
         while($file = readdir($dn)){
             if(is_file("$directory/$file")){
@@ -59,8 +64,6 @@ class scanFile{
                             $temp['params'] = $params;
                             $scandirArr[$file]['class'][$httpType]['method'][] = $temp;
                         }
-                        // var_dump($param);
-                        // exit();
                     }
                 }
             }

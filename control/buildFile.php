@@ -1,5 +1,12 @@
 <?php
+/*
+ * 创建文档
+ */
 class buildFile{
+    /*
+     * 根据扫描出来的内容创建文档
+     * array dirArr 扫描内容
+     */
     public function checkFiles($dirArr){
         if(empty($dirArr)){
             echo "扫描目录失败\n";
@@ -25,8 +32,6 @@ class buildFile{
                 foreach($value['class'] as $ck => $cv){
                     $method = "";
                     foreach($cv as $mk => $mv){
-                        // var_dump($cv);
-                        // exit();
                         if($mk == "class"){
                             $method .= "<div style='border-bottom: 1px solid #e7e7e7;'>";
                             $method .= "<h4>$mv[title]</h4><ul><li>描述</li><li>$mv[info]</li></ul>";
@@ -51,8 +56,6 @@ class buildFile{
                             }
                         }
                     }
-                    // var_dump(htmlspecialchars($method));
-                    // exit();
                     switch($ck){
                         case 'Get':
                             $GetMethod = $method;
@@ -77,8 +80,6 @@ class buildFile{
             }
             $outFiles['menu'] = $menu;
             $outFiles['menuList'] = $menuList;
-            // var_dump($outFiles);
-            // exit();
             return $outFiles;
         }
     }

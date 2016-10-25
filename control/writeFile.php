@@ -1,5 +1,13 @@
 <?php
+/*
+ * 将创建好的文档写入文件
+ */
 class writeFile{
+    /*
+     * 将创建好的文档写入文件
+     * array Arr 创建好的文档
+     * string dir 写入目录
+     */
     public function writeContentsFiles($Arr, $dir){
         if(empty($Arr)){
             echo "替换失败\n";
