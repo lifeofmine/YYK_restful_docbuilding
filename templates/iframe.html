@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/php_interface.css" />
+</head>
+<body>
+	<div class="left-menu">
+		<ul>
+			<li class="left-menu-parent"><span class="left-menu-icon" onclick="leftMenuShow()">+</span><a href="index.html" target="_parent">索引</a>
+				<ul class="left-menu-child" id="menuChild" style="display: block;">
+					<!-- <li><span class="left-menu-icon">-</span><a href="sencond.html" target="_parent">news</a></li>
+					<li><span class="left-menu-icon">-</span><a href="sencond.html" target="_parent">login</a></li>
+					<li><span class="left-menu-icon">-</span><a href="sencond.html" target="_parent">数据接口3</a></li> -->
+					{$menuList}
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<script>
+		function leftMenuShow(){
+			var menuChild=document.getElementById("menuChild");
+			if(menuChild.style.display=='block'){
+				menuChild.style.display='none';
+			}else{
+				menuChild.style.display='block';
+			}
+		}
+	</script>
+</body>
+</html>

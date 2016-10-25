@@ -1,0 +1,186 @@
+/*
+ * PHP后台接口在线手册css---1.0
+*/
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	font-family: "微软雅黑";
+}
+
+ul,
+li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #666666;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.header {
+	height: 50px;
+	line-height: 50px;
+	width: 100%;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #e7e7e7;
+	color: #777777;
+	font-size: 18px;
+	text-indent: 20px;
+}
+
+.container {
+	width: 100%;
+	clear: both;
+	overflow: hidden;
+	height: calc(100% - 51px);
+}
+
+.left-menu {
+	width: 250px;
+	border-right: 1px solid #e7e7e7;
+	height: 100%;
+	background-color: #f8f8f8;
+	overflow: scroll;
+	overflow-x:hidden;
+	color: #666666;
+	float: left;
+}
+
+.left-menu ul {
+	margin-left: 20px;
+}
+
+.left-menu ul:first-child {
+	margin-top: 20px;
+}
+
+.left-menu ul li {
+	line-height: 25px;
+}
+
+.left-menu ul li a {
+	margin-left: 5px;
+}
+
+.left-menu ul li .left-menu-icon {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	line-height: 10px;
+	text-align: center;
+	border: 1px solid #bababa;
+	background: #FFFFFF;
+	cursor: pointer;
+	margin-top: 6px;
+	float: left;
+}
+
+.left-menu-parent {
+	font-size: 15px;
+}
+
+.left-menu-child {
+	font-size: 13px;
+	display: none;
+}
+
+.left-menu-child-direction {
+	display: block;
+	float: left;
+	width: 15px;
+	height: 19px;
+	border-bottom: 1px solid #bababa;
+	border-left: 1px solid #bababa;
+}
+
+.right-container {
+	float: right;
+	margin-left: 50px;
+	width: calc(100% - 351px);
+	overflow: scroll;
+	overflow-x:hidden;
+	height: 100%;
+}
+
+.interface-list {
+	overflow: hidden;
+	clear: both;
+	width: 100%;
+}
+
+.interface-list ul {
+	width: 100%;
+	padding: 10px 0;
+	border-bottom: 1px solid #e7e7e7;
+	font-size: 14px;
+	overflow: hidden;
+}
+
+.interface-list ul li {
+	line-height: 25px;
+	float: left;
+	width: 33%;
+}
+
+.interface-list ul li:first-child{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.tab-menu .selected {
+	background-color: #d3d3d3 !important;
+}
+
+.tab-menu ul {
+	height: 30px;
+}
+
+.tab-menu ul li {
+	float: left;
+	list-style: none;
+	width: 25%;
+	height: 30px;
+	color: #666666;
+	text-align: center;
+	line-height: 30px;
+	background: #f8f8f8;
+	cursor: pointer;
+}
+
+.tab-menu ul li a {
+	text-decoration: none;
+}
+
+.tab-box {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.tab-box .hide {
+	display: none;
+}
+
+.tab-box ul li{
+	line-height: 25px;
+	float: left;
+	margin-right: 20px;
+	min-width: 100px;
+}
+
+.tab-box ul {
+	width: 100%;
+	/*padding: 10px 0;*/
+	/*border-bottom: 1px solid #e7e7e7;*/
+	font-size: 14px;
+	overflow: hidden;
+}
